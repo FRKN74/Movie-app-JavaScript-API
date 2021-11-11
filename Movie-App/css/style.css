@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #202124;
+}
+nav{
+    height: 80px;
+    background-color: rgb(43, 44, 44);
+}
+.search{
+    width: 300px;
+    outline-style: none;
+    border: none;
+    height: 40px;
+    border-bottom-right-radius: 8%;
+    border-top-right-radius: 8%;
+    display: inline-flex;
+    background-color:#202124 ;
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+}
+.search:hover{
+    background-color:#323335 ;
+    transition: 0.5s;
+}
+.search-icon{
+    background-color: rgb(51, 59, 59);
+    height: 40px;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 8%;
+    border-top-left-radius: 8%;
+    cursor: pointer;
+}
+.search-icon:hover{
+
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.content{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin:10px;
+    border-radius: 10%;
+    
+
+}
+.content:hover{
+    transform: translateY(0);
+    transform: scale(1.1);
+    
+
+}
+.card{
+    margin-top: 50px;
+    display: flex;
+    height: 510px;
+    width: 255px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    transition: .5s;
+    border-radius: 5%;
+
+    background-color: rgb(51, 59, 59);
+}
+
+.content-image{
+    border-style: hidden;
+    border-radius: 5%;
+    
+
+}
+
+
+.img-text-left{
+
+    background-color: rgb(51, 59, 59);
+    height: auto;
+    font-size: 1rem;
+    color: white;
+    
+}
+.title{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    height: auto;
+    border-bottom: 1px solid black;
+    text-shadow: 10px 10px 10px  black;
+}
+.title>.imbd{
+    margin-left: 80px;
+    font-size: 1rem;
+    text-shadow: 10px 10px 10px  black;
+    color: darkgoldenrod;
+}
+
+
+#text{
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    z-index: 1;
+    opacity: 0;  
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    overflow: hidden;
+    transition: 2s all;
+    transition-delay: 1s;
+    border-radius: 5%;
+
+
+
+}
+.content:hover #text{
+
+    opacity: 0.8;
+    animation-name: getir; 
+    animation-duration: 1s;
+    height: auto; 
+    transition-delay: 0s;
+    border-radius: 5%;
+
+    
+
+}
+.btn{
+    width: 800px;
+    height: 50px;
+    background-color: darkgoldenrod;
+    color: white;
+    margin-left: 150px;
+    margin-top: 30px;
+
+}
+
+@keyframes getir { 
+    from {
+        margin-top:50px;
+        width:250px;
+    }
+    
+    to {
+        margin-top:50px;
+        width: 250px;
+    }
+    }
